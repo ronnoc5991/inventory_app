@@ -1,0 +1,10 @@
+<h1> {{ title }} </h1>
+
+<dl>
+    {{#each categories_list}}
+    <a href={{ this.url }}>
+        <dt> {{ this.name }} </dt>
+    </a>
+        <dd> {{ this.description }} </dd>
+    {{/each}}
+</dl>

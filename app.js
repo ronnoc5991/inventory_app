@@ -9,7 +9,7 @@ var categoriesRouter = require('./routes/categories');
 
 var app = express();
 var mongoose = require('mongoose');
-var mongDB = 'mongodb+srv://inventory_app_admin:yI7areRDxlYd1Qb6@cluster0.fiqpm.mongodb.net/inventory_app?retryWrites=true&w=majority';
+var mongoDB = 'mongodb+srv://inventory_app_admin:yI7areRDxlYd1Qb6@cluster0.fiqpm.mongodb.net/inventory_app?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on( 'error', console.error.bind(console, 'MongoDB connection error:') );
